@@ -6,7 +6,7 @@ def main():
         game.handleEvents()
         game.update()
         game.render()
-    game.exit()
+    game.Exit()
     return 0
 
 sys.exit(main())

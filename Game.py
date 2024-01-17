@@ -7,7 +7,7 @@ class Game:
         self.screen = pygame.display.set_mode(self.screenSize, vsync=1)
         self.isRunning = True
     def handleEvents(self):
-        for event in pygame.get_event():
+        for event in pygame.event.get():
             if event.type == QUIT:
                 self.isRunning = False
         return 0
